@@ -146,9 +146,9 @@ gtb_example01
 latest              ecb3f44aea9f        2 minutes ago       109MB 
 # 走らせませす．
 # docker run -d -p 8080:80 --name gtb_example01 gtb_example01:latest
-
+```
 ブラウザで確認してください アクセスできませんでしかた？残念… 
-`Docker -p` とかでoption について調べてみましょう‼
+`Docker -p` とかでoption について調べて修正してみましょう。
 終わったらちゃんと削除してくださいね
 ```
 # docker ps | grep gtb

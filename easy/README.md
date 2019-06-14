@@ -135,7 +135,7 @@ hello-world                          latest              fce289e99eb9        8 w
 9fd4701f4953
 # docker ps | grep nginx
 ```
-- DockerFileでのデプロイ
+- [DockerFile](./Dockerfile)でのデプロイ
 ```
 # Gist上のコピペしてください.DockerFileを書いて
 # vim Dockerfile
@@ -157,8 +157,8 @@ latest              ecb3f44aea9f        2 minutes ago       109MB
 ※チャレンジ課題：同様にDockerFileからApacheをビルドしてみてください．
 ### 5. Kubernetes の実行
 ないなら良いが`# docker login`をやっとくと今後は楽．k8sopsユーザーで実行してください
+[demo.yaml](./demo.yaml)を実行していきましょう
 ```
-vim demo.yaml
 # kubectl apply -f demo.yaml
 # kubectl get pods --selector app=demo
 # kubectl get service

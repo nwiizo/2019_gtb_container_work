@@ -54,10 +54,12 @@ Kubernetes
 インフラを自動で管理する方法はいくつかあって有名なものでいうと[serverspec](https://github.com/mizzy/serverspec) や[Goss](https://github.com/aelsabbahy/goss)などのツールがあります．
 
 - Dockerの確認
+[Docerの各種コマンド](https://docs.docker.com/engine/reference/commandline/docker/)は一度読んでおくとよいかもしれません。
 ```
 # docker -v
 ```
 - Kubernetesの確認
+kubernetes を操作するには[kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/)を用いることが多いのでご確認お願いします。
 ```
 # su - k8sops
 # bashrcにでも入れとけばいい

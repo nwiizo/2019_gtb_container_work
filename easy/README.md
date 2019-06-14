@@ -8,7 +8,7 @@
   
 ### 2. OSの基本設定とKubernetes
 
-### 2.1 Ansibleのインストール
+### 2.1 Ansibleでインストール
 パッケージのダウンロード
 ```
 # apt-get update
@@ -27,8 +27,9 @@
 # kill -9 <PID>
 ```
 
-### 2.1  Ansibleの実行
-Ansibleの実行を行います.ここで詰まったら一緒に泣きながらデバッグしましょう[Document](https://docs.ansible.com/#coreversionselect)
+### 2.1.1  Ansibleの実行
+Ansibleの実行を行います.ここで詰まったら一緒に泣きながらデバッグしましょう  
+[Document](https://docs.ansible.com/#coreversionselect)  
 `vim /etc/ansible/ansible.cfg`
 ```
 [defaults]

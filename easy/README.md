@@ -1,3 +1,6 @@
+# ハンズオン
+講義はどうでしたか？ここが良かった。悪かったなどがあるなら積極的に[nwiizo](https://twitter.com/nwiizo)にメンション飛ばしてください。
+
 ### 1. ConoHaの登録と VMの準備
   - アカウントの登録
   - 推奨OS Ubuntu 18.04 LTS (検証これでやった)
@@ -136,17 +139,18 @@ hello-world                          latest              fce289e99eb9        8 w
 # Gist上のコピペしてください.DockerFileを書いて
 # vim Dockerfile
 # build して
-# docker build . -t minicamp_fukuoka
-# docker images | grep minicamp
-minicamp_fukuoka                     latest              ecb3f44aea9f        2 minutes ago       109MB 
+# docker build . -t gtb_example01
+# docker images | grep gtb
+gtb_example01
+latest              ecb3f44aea9f        2 minutes ago       109MB 
 # 走らせませす．
-# docker run -d -p 8080:80 --name minicamp_fukuoka minicamp_fukuoka:latest
-```
+# docker run -d -p 8080:80 --name gtb_example01 gtb_example01:latest
+
 ブラウザで確認してください アクセスできませんでしかた？残念… 
 `Docker -p` とかでoption について調べてみましょう‼
 終わったらちゃんと削除してくださいね
 ```
-# docker ps | grep minicamp
+# docker ps | grep gtb
 # docker kill <CONTAINER ID>
 ```
 ※チャレンジ課題：同様にDockerFileからApacheをビルドしてみてください．
@@ -161,6 +165,7 @@ NAME         TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
 demo         LoadBalancer   10.108.16.22   <pending>     8080:30080/TCP   3m41s
 kubernetes   ClusterIP      10.96.0.1      <none>        443/TCP          108m
 ```
+
 削除します
 ```
 # kubectl delete -f demo.yaml
@@ -168,7 +173,11 @@ deployment.extensions "demo" deleted
 service "demo" deleted
 ```
 
-※チャレンジ課題：同様にApacheで動作するPodを動作させてください．
+※チャレンジ課題：同様にApacheで動作するPodを動作させてください。
+### 6.課題
+[main.go](./main.go)をコンテナ化及びKubernetesにて外部へ公開してみてください。
+
+### さいごに
 一旦、ここまで終了できた貴方を褒めたいと思います。[hard](../hard)に進むかと用意した環境で下記のコンテンツで遊ぶか話してる無駄話を聞いてもらってもどっちでもかまいません．
 - https://docs.docker.com/get-started/
 - https://kubernetes.io/docs/home/

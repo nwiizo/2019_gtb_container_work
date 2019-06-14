@@ -1,5 +1,6 @@
-# ハンズオンです。
+# ハンズオン
 講義はどうでしたか？ここが良かった。悪かったなどがあるなら積極的に[nwiizo](https://twitter.com/nwiizo)にメンション飛ばしてください。
+
 ### 1. ConoHaの登録と VMの準備
   - アカウントの登録
   - 推奨OS Ubuntu 18.04 LTS (検証これでやった)
@@ -144,7 +145,7 @@ gtb_example01
 latest              ecb3f44aea9f        2 minutes ago       109MB 
 # 走らせませす．
 # docker run -d -p 8080:80 --name gtb_example01 gtb_example01:latest
-```
+
 ブラウザで確認してください アクセスできませんでしかた？残念… 
 `Docker -p` とかでoption について調べてみましょう‼
 終わったらちゃんと削除してくださいね
@@ -164,7 +165,6 @@ NAME         TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
 demo         LoadBalancer   10.108.16.22   <pending>     8080:30080/TCP   3m41s
 kubernetes   ClusterIP      10.96.0.1      <none>        443/TCP          108m
 ```
-
 
 削除します
 ```

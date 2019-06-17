@@ -156,7 +156,10 @@ latest              ecb3f44aea9f        2 minutes ago       109MB
 # docker ps | grep gtb
 # docker kill <CONTAINER ID>
 ```
-※チャレンジ課題：同様にDockerFileからApacheをビルドしてみてください．
+#### 課題
+Docker-composeで書き直してみてください
+##### チャレンジ課題
+同様にDockerFileからApacheをビルドしてみてください
 ### 5. Kubernetes の実行
 ないなら良いが`# docker login`をやっとくと今後は楽．k8sopsユーザーで実行してください
 [demo.yaml](./demo.yaml)を実行していきましょう
@@ -175,12 +178,16 @@ kubernetes   ClusterIP      10.96.0.1      <none>        443/TCP          108m
 deployment.extensions "demo" deleted
 service "demo" deleted
 ```
+#### 課題 
+ - Podを3つ起動させてデプロイしてください  
+ - appラベルをdevにしてデプロイしてください
+#### チャレンジ課題
+ 同様にApacheで動作するPodを動作させてください  
 
-※チャレンジ課題：同様にApacheで動作するPodを動作させてください。
-### 6.課題
-[main.go](./main.go)をコンテナ化及びKubernetesにて外部へ公開してみてください。
+### 6.最終課題
+[main.go](./main.go)をコンテナ化及びKubernetesにて外部へ公開してください
 
 ### さいごに
-一旦、ここまで終了できた貴方を褒めたいと思います。[hard](../hard)に進むかと用意した環境で下記のコンテンツで遊ぶか話してる無駄話を聞いてもらってもどっちでもかまいません．
+一旦、ここまで終了できた貴方を褒めたいと思います。[plus](./plus)で各種設定の細かな説明に進むか[hard](../hard)で他の課題に取り組むか用意した環境で下記のコンテンツで遊ぶか話してる無駄話を聞いてもらってもどっちでもかまいません．
 - https://docs.docker.com/get-started/
 - https://kubernetes.io/docs/home/

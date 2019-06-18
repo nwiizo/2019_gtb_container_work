@@ -161,8 +161,36 @@ Docker-composeで書き直してみてください
 ##### チャレンジ課題
 同様にDockerFileからApacheをビルドしてみてください
 ### 5. Kubernetes の実行
-ないなら良いが`# docker login`をやっとくと今後は楽．k8sopsユーザーで実行してください
-[demo.yaml](./demo.yaml)を実行していきましょう
+ないなら良いが`# docker login`をやっとくと今後は楽．k8sopsユーザーで実行してください。rootで実行したい場合には環境変数として`export KUBECONFIG=/etc/kubernetes/admin.conf`を設定してください
+#### コマンドによる簡易的なデプロイ
+```
+# # アプリケーションのデプロイ
+# kubectl create deployment nginx-preview --image nginx:latest
+deployment.apps/nginx-preview created
+# # 確認
+# kubectl get deployment nginx-preview
+NAME            READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-preview   1/1     1            1           74s
+# # アプリケーションの公開
+# kubectl expose --type NodePort --port 8088 deployment nginx-preview
+service/nginx-preview exposed
+# # ポートの公開
+# kubectl expose --type LoadBalancer --port 80 deployment nginx-preview
+# # 確認
+# kubectl get service nginx-preview -o wide
+NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE     SELECTOR
+service/nginx-preview   LoadBalancer   10.111.201.111   <pending>     80:30597/TCP   2m23s   app=nginx-preview
+# # ブラウザ等で確認後削除
+# kubectl delete service,deployment  nginx-preview
+service "nginx-preview" deleted
+deployment.extensions "nginx-preview" deleted
+# リソースがないことを確認
+# kubectl get pod -o wide
+# kubectl get service,deployment nginx-preview -o wide
+Error from server (NotFound): services "nginx-preview" not found
+Error from server (NotFound): deployments.extensions "nginx-preview" not found
+```
+#### [demo.yaml](./demo.yaml)を実行していきましょう
 ```
 # kubectl apply -f demo.yaml
 # kubectl get pods --selector app=demo

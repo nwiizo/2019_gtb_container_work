@@ -48,7 +48,8 @@ Kubernetes
 # ansible-playbook -i ./hosts.yml ./site.yml -l "<ex-IP>" -k
 ```
 
-### 
+### 2.2 [Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)でインストール
+### 2.3 [Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)でインストール
 
 ### 3.確認
 インフラを自動で管理する方法はいくつかあって有名なものでいうと[serverspec](https://github.com/mizzy/serverspec) や[Goss](https://github.com/aelsabbahy/goss)などのツールがあります．

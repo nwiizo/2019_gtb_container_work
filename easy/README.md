@@ -164,7 +164,8 @@ Docker-composeで書き直してみてください
 ##### チャレンジ課題
 同様にDockerFileからApacheをビルドしてみてください
 ### 5. Kubernetes の実行
-ないなら良いが`# docker login`をやっとくと今後は楽．k8sopsユーザーで実行してください。rootで実行したい場合には環境変数として`export KUBECONFIG=/etc/kubernetes/admin.conf`を設定してください
+ないなら良いが`# docker login`をやっとくとrootで実行してみてください
+rootで実行したい場合には環境変数として`export KUBECONFIG=/etc/kubernetes/admin.conf`を設定してください
 #### コマンドによる簡易的なデプロイ
 ```
 # # アプリケーションのデプロイ

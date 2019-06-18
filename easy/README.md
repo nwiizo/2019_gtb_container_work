@@ -21,10 +21,7 @@
 ```
 # git clone https://github.com/nwiizo/kubernetes-on-conoha
 ```
-or
-```
-# git clone https://github.com/nwiizo/minicamp-fukuoka2019
-```
+
 
 待てばなおりますがapt がどうしても終わらない人 
 ```

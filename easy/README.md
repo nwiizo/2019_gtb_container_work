@@ -19,10 +19,14 @@
 今回はk8sやDockerに触れるファーストなので全部サクッとAnsibleで構築してしまいます  
  - 詳しくやりたい場合は [kubernetes the hard way](https://github.com/kelseyhightower/kubernetes-the-hard-way)をやってください．
 ```
+# git clone https://github.com/nwiizo/kubernetes-on-conoha
+```
+or
+```
 # git clone https://github.com/nwiizo/minicamp-fukuoka2019
 ```
+
 待てばなおりますがapt がどうしても終わらない人 
-```
 # ps aux |grep apt
 # kill -9 <PID>
 ```

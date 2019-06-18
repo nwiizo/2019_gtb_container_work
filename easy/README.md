@@ -27,6 +27,7 @@ or
 ```
 
 待てばなおりますがapt がどうしても終わらない人 
+```
 # ps aux |grep apt
 # kill -9 <PID>
 ```

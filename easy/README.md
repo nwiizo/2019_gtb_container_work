@@ -191,7 +191,7 @@ deployment.extensions "nginx-preview" deleted
 Error from server (NotFound): services "nginx-preview" not found
 Error from server (NotFound): deployments.extensions "nginx-preview" not found
 ```
-#### [demo.yaml](./demo.yaml)を実行していきましょう
+#### [demo.yaml](./demo.yaml)というマニュフェストを実行していきましょう
 ```
 # kubectl apply -f demo.yaml
 # kubectl get pods --selector app=demo

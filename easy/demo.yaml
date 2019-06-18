@@ -17,6 +17,7 @@ spec:
       containers:
         - name: demo
           image: gtb_example01:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
 ---

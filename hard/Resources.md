@@ -1,7 +1,3 @@
-### 概要
-貴方がここを読んでいるということは[課題](./easy)を終えられたのでしょう...   
-つまり、私が貴方に私が用意しなくてはいけない課題がもう少し難しいものということになります。
-
 ### Resources
 - [Kubernetes deep dive: API Server – part 1](https://blog.openshift.com/kubernetes-deep-dive-api-server-part-1/)
 - [Kubernetes deep dive: API Server – part 2](https://blog.openshift.com/kubernetes-deep-dive-api-server-part-2/)

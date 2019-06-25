@@ -37,3 +37,22 @@
 - [hossainemruz/k8s-initializer-finalizer-practice](https://github.com/hossainemruz/k8s-initializer-finalizer-practice)
 - [munnerz/k8s-api-pager-demo](https://github.com/munnerz/k8s-api-pager-demo)
 - [m3db/m3db-operator](https://github.com/m3db/m3db-operator)
+- [API Overview](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/) API は各種オブジェクトの作成・変更・削除で表現する(宣言的なので)
+- [CRI](https://github.com/kubernetes/community/blob/master/contributors/devel/container-runtime-interface.md) `kubelet` がコンテナ操作をするのに必要なインタフェースを定めたもの(実装としては cri-o や containerd)
+- [CNI](https://github.com/containernetworking/cni/issues)  `kubelet` や Docker がコンテナ用のネットワーク操作をするインタフェースを定めたもの
+- [client-go](https://github.com/kubernetes/client-go)  Go 言語から Kubernetes を操作するためのライブラリ
+- [ Cloud Native DevOps with Kubernetes](http://shop.oreilly.com/product/0636920175131.do)
+- [ Kubernetes in Action](https://www.manning.com/books/kubernetes-in-action)
+- [ Kubernetes完全ガイド](https://www.amazon.co.jp/dp/4295004804/ref=cm_sw_r_tw_dp_U_x_SS.vCbZV0PV00)
+- [ しくみがわかるKubernetes Azureで動かしながら学ぶコンセプトと実践知識](https://www.amazon.co.jp/dp/4798157848/ref=cm_sw_r_tw_dp_U_x_oT.vCb6KQ12JC)
+- [ Kubernetes Patterns ](http://shop.oreilly.com/product/0636920242598.do)
+- [ Kubernetes実践入門 プロダクションレディなコンテナ＆アプリケーションの作り方 ](https://gihyo.jp/book/2019/978-4-297-10438-2)
+- [ what is cloud native why should I care](https://github.com/cncf/presentations/blob/master/2016-software-circus/what-is-cloud-native/what-is-cloud-native.pdf)
+- [ CNCF Overview Ja-Jp](https://github.com/zembutsu/presentations/blob/master/japanese/CNCF_Overview_Ja-Jp.pdf)
+- [ インフラエンジニアとしてのわたしの研究開発とこれから注目のコンテナ技術](https://speakerdeck.com/matsumoto_r/inhuraenziniatositefalsewatasifalseyan-jiu-kai-fa-tokorekarazhu-mu-falsekontenaji-shu)
+- [ 忙しい人の5分で分かるDocker 2017年春Ver](https://www.slideshare.net/zembutsu/5-minuts-docker-2017)
+- [ Akihiro Suda さんのスライドシェア](https://www.slideshare.net/AkihiroSuda) 全部読むべき
+- [ Docker, Inc is Dead](https://chrisshort.net/docker-inc-is-dead/) Dockerは混沌としており単語の意味すらちゃんと調べられないしんどい
+- [ コンテナのセキュリティを中身から理解しよう](https://speakerdeck.com/udzura/inside-out-container-and-its-security) 
+- [ OpenFaaSの初期構想 | Functions as a Service (FaaS)](https://blog.alexellis.io/functions-as-a-service/)
+- [ ロリポップ！マネージドクラウド FastContainerの裏側](https://www.slideshare.net/ssuser6e4f0a1/fastcontainer)  

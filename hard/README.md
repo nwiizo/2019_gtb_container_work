@@ -18,11 +18,12 @@ PrometheusとGrafanaでシュッと可視化してみよう、あと、dashboard
 とりあえず、Envoy導入しよっか
 
 ### Golangによるクライアントの開発(Docker)
-
+[docker: github.com/docker/docker/client](https://godoc.org/github.com/docker/docker/client)を参考に一つ機能を開発していきましょう。
 ### Golangによるクライアントの開発(Kubernetes)
-
+[kubernetes/client-go](https://github.com/kubernetes/client-go)を参考に一つ機能を開発していきましょう。
 ### Kubernetes Operator 
-https://github.com/operator-framework/operator-lifecycle-manager]
+[Kubernetes Operator](https://github.com/operator-framework/operator-sdk)を使って任意のオペレーションをやりましょう。
 ### CRDの作成
+[Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)を使ってCRDの開発をしましょう。
 
 

@@ -161,6 +161,9 @@ latest              ecb3f44aea9f        2 minutes ago       109MB
 ```
 #### 課題
 Docker-composeで書き直してみてください
+```
+# docker run -d -p 8080:80 --name gtb_example01 gtb_example01:latest
+```
 ##### チャレンジ課題
 同様にDockerFileからApacheをビルドしてみてください
 ### 5. Kubernetes の実行

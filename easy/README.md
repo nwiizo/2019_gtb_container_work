@@ -179,7 +179,7 @@ deployment.apps/nginx-preview created
 NAME            READY   UP-TO-DATE   AVAILABLE   AGE
 nginx-preview   1/1     1            1           74s
 # # ポートの公開
-# kubectl expose --type LoadBalancer --port 30080 deployment nginx-preview
+# kubectl expose --type LoadBalancer --port 80 deployment nginx-preview
 # # 確認
 # kubectl get service nginx-preview -o wide
 NAME                    TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE     SELECTOR

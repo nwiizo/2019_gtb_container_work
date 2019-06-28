@@ -17,3 +17,12 @@ PrometheusとGrafanaでシュッと可視化してみよう、あと、dashboard
 ### ServiceMesh 導入
 とりあえず、Envoy導入しよっか
 
+### Golangによるクライアントの開発(Docker)
+
+### Golangによるクライアントの開発(Kubernetes)
+
+### Kubernetes Operator 
+https://github.com/operator-framework/operator-lifecycle-manager]
+### CRDの作成
+
+

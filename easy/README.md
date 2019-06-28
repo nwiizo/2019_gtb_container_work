@@ -142,7 +142,7 @@ hello-world                          latest              fce289e99eb9        8 w
 ```
 - [DockerFile](./Dockerfile)でのデプロイ
 ```
-# Gist上のコピペしてください.DockerFileを書いて
+# Github上のファイルをコピペしてください.DockerFileを書いて
 # vim Dockerfile
 # build して
 # docker build . -t gtb_example01
